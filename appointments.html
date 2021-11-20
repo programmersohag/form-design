@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://amplify-amplifyf3bbc15a6e454-staging-51420-deployment.s3.us-west-2.amazonaws.com/flexboxgrid.css">
+    <link rel="stylesheet" href="style.css">
+    <!--    <link rel="stylesheet" href="https://amplify-amplifyf3bbc15a6e454-staging-51420-deployment.s3.us-west-2.amazonaws.com/style.css">-->
+</head>
+
+<body>
+<section class="header-image">
+    <div class="confirmation-header-content">
+        <h1 class="heading-one">Patient</h1>
+        <p class="heading-two">Lorem ipsum is simply dummy of the printing and type setting industry</p>
+    </div>
+</section>
+<section class="main-content">
+    <div class="button-wrapper">
+        <button class="tab tab-button active" style="border-top-left-radius: 20px;" data-id="provider">Provider
+            Appointments
+        </button>
+        <button class="tab tab-button" data-id="your">Your Appointments</button>
+        <button class="tab tab-button" style="border-top-right-radius: 20px;" data-id="other">Other Appointments
+        </button>
+    </div>
+    <div class="content-wrapper">
+        <div class="content active" id="provider">
+            <div class="row" style="padding: 20px 0">
+                <div class="col-xs-10">
+                    <h1>Provider Appointments</h1>
+                </div>
+                <div class="col-xs-1">
+                     <span class="fa-stack fa-2x">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+                <div class="col-xs-1">
+                    <span class="fa-stack fa-2x" id="provider-calendar">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="your">
+            <div class="row" style="padding: 20px 0">
+                <div class="col-xs-10">
+                    <h1>Your Appointments</h1>
+                </div>
+                <div class="col-xs-1">
+                     <span class="fa-stack fa-2x">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+                <div class="col-xs-1">
+                    <span class="fa-stack fa-2x" id="your-calendar">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                </div>
+            </div>
+        </div>
+        <div class="content" id="other">
+            <div class="row" style="padding: 20px 0">
+                <div class="col-xs-10">
+                    <h1>Other Appointments</h1>
+                </div>
+                <div class="col-xs-1">
+                     <span class="fa-stack fa-2x">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-tasks fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+                <div class="col-xs-1">
+                    <span class="fa-stack fa-2x" id="other-calendar">
+                         <i class="fas fa-circle fa-stack-2x"></i>
+                         <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                     </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card-title">
+                            <div>John Doe</div>
+                            <div>29 October 2021</div>
+                        </div>
+                        <div class="card-body">
+                            <p>Disease - Heart disease</p>
+                            <p>Age - 28 years</p>
+                            <p>Phone number 323-889-1127</p>
+                            <p>Address - 806 Hillhaven Drive, Loss Angeles,</p>
+                            <p>California, 56465</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">Decline</button>
+                            <button type="button" class="btn btn-light-indigo">Refer</button>
+                            <button type="button" class="btn btn-indigo">Approve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const tabs = document.querySelector(".main-content");
+    const tabButton = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".content");
+    tabs.onclick = e => {
+        const id = e.target.dataset.id;
+        if (id) {
+            tabButton.forEach(btn => {
+                btn.classList.remove("active");
+            });
+            e.target.classList.add("active");
+
+            contents.forEach(content => {
+                content.classList.remove("active");
+            });
+            const element = document.getElementById(id);
+            element.classList.add("active");
+        }
+    }
+    const providerPicker = MCDatepicker.create({
+        el: '#provider-calendar',
+        disableWeekends: true,
+        bodyType: 'inline',
+        autoClose: true
+    });
+    const yourPicker = MCDatepicker.create({
+        el: '#your-calendar',
+        disableWeekends: true,
+        bodyType: 'inline',
+        autoClose: true
+    });
+    const otherPicker = MCDatepicker.create({
+        el: '#other-calendar',
+        disableWeekends: true,
+        bodyType: 'inline',
+        autoClose: true
+    });
+    const providerCalendar = document.getElementById('provider-calendar');
+    providerCalendar.onclick = () => providerPicker.open();
+    const yourCalendar = document.getElementById('your-calendar');
+    yourCalendar.onclick = () => yourPicker.open();
+    const otherCalendar = document.getElementById('other-calendar');
+    otherCalendar.onclick = () => otherPicker.open();
+</script>
+
+</body>
+
+</html>
